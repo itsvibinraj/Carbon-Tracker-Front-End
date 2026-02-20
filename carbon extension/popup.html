@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .start-body {background-color:#10b981;}
+    .stop-body {background-color:#ef4444;}
+    .container { width: 220px; padding: 15px; font-family: sans-serif; text-align: center; border-radius: 5px; background-color:#1a1a1a; border-width: 5px; border-color:#10b981;}
+    h3 { margin: 0 0 10px 0; color: #ededed; }
+    #domain { font-size: 12px; color: #a5a5a5; margin-bottom: 15px; word-break: break-all; }
+    .timer { font-size: 32px; font-weight: bold; color: #e6e6e6; margin: 10px 0; font-family: monospace; }
+    button { width: 100%; padding: 10px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; color:#10b981}
+    .btn-start { background-color: #10b981; color: rgb(0, 0, 0); } /* Green */
+    .btn-stop { background-color: #ef4444; color: rgb(0, 0, 0); } /* Red */
+    .status { margin-top: 10px; font-size: 11px; color: #888; }
+    .goto {background-color:#1a1a1a; color:#10b981; margin-top:10px;}
+    .goto:hover{background-color:#4c4c4c; color:#05ea9e; transition-duration: 0.5s;}
+  </style>
+</head>
+<body id="boddy" class="start-body">
+    <div class="container">
+        <h3>Carbon Tracker</h3>
+        <div id="domain">Loading...</div>
+        
+        <div class="timer" id="timerDisplay">00:00:00</div>
+
+        <button id="toggleBtn" class="btn-start">Start Tracking</button>
+
+        <div class="status" id="statusMsg">Ready to track</div>
+
+        <script src="popup.js"></script>
+        <button id="dashboardBtn" class="goto">Go to Dashboard</button>
+    </div> 
+</body>
+</html>

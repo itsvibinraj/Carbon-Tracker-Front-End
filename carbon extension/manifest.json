@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Carbon Tracker Spy",
+  "version": "1.0",
+  "description": "Tracks active browsing time to calculate carbon footprint.",
+  "permissions": ["tabs", "storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Start Tracking"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
